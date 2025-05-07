@@ -1,0 +1,42 @@
+1. Create a Diroctory
+-> mkdir <Diroctory name>
+*** More Diroctory Create in one command line
+-> mkdir <Diroctory name>{start..end}
+* exmaple: mkdir file{1..3} file1, file2, file3
+
+
+2. Create a file 
+-> touch <file name>
+*** Moe file Create in one command line
+-> touch <file_name>{start..end}.<file_extension>
+* exmaple: touch file{1..3}.txt file1.txt , file2.txt file3.txt
+
+3. Switch Diroctory or file
+-> cd 
+
+4. Back one file or Diroctory
+-> cd ..
+
+5. Back to home
+-> cd ~/ 
+
+6. Check current location
+-> pwd (print working diroctory)
+
+7. Check file or diroctory
+-> ls
+
+8. Check file or diroctory with hidden file or diroctory
+-> ls -a
+
+9. Check file or diroctory with file or diroctory permission
+-> ls -l
+
+10. edit file or diroctory
+-> nano | vim
+
+11. Indirect modify file or diroctory
+-> echo 'msg' >> <file or diroctory name>
+
+12. Check any keywords manually 
+-> man ls {explain is ls command}
