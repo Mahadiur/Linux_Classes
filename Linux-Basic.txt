@@ -40,3 +40,11 @@
 
 12. Check any keywords manually 
 -> man ls {explain is ls command}
+
+13. Check any file or diroctory first some line
+-> head <amount of line> <file-name>
+exmaple: head -5 example.txt {show first 5 line of code or text}
+
+14. Check any file or diroctory last some line
+-> tail <amount of line> <file-name>
+example: tail -5 example.txt {show last 5 line of code or text}
