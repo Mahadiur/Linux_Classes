@@ -1,0 +1,82 @@
+1. User Create:
+-> sudo useradd -m <username>
+
+2. sudo meaning:
+-> Super User do
+
+3. Check User:
+-> cat /etc/passwd 
+
+4. Set User password:
+-> sudo passwd <username>
+
+5. Switch User:
+-> su <username>
+
+6. delete user:
+-> sudo userdel -r <username>
+
+7. Group Create:
+-> sudo groupadd <groupname>
+
+8. Check Group:
+-> cat /etc/group
+
+9. Set password:
+-> sudo gpasswd <groupname>
+
+10. delete group:
+-> sudo groupdel <groupname>
+
+11. Entry User in group:
+-> sudo usermod -aG <groupname> <username>
+
+12. Entry Multiple user in one Group
+-> sudo gpassad -M <username>,<username>,<username>... <groupname>
+*example:
+sudo gpasswd -M user1, user2,user3 exampleGroup
+
+13. Group file or diroctory permission
+-> sudo chgrp <groupname> <file-or-diroctory-name>
+
+14. Check file or diroctory permission 
+-> ls -l
+
+15. ACL meaning:
+-> Access Control List
+ 
+16. install ACL in local Computer:
+-> sudo apt install acl
+
+17. Set file or diroctory permission with ACL:
+-> setfacl -m u:<username>:permission {only for user}
+-> setfacl -m g:<groupname>:permission {only for group}
+
+18. Check file or diroctory permission:
+-> getfacl <file-or-diroctory-name>
+
+19. remove ACL:
+-> setfacl -b <file-or-diroctory-name>
+
+20. remove ACL from Computer:
+-> sudo apt remove acl
+
+21. permission Like this
+-> r (read)
+-> w (write)
+-> x (exicute)
+* example: -rrwxrwxr-- {only for file}
+
+22. file or diroctory permission with number:
+7 ->[1-1-1]-> rwx 
+6 ->[1-1-0]-> rw-
+5 ->[1-0-1]-> r-x
+4 ->[1-0-0]-> r--
+3 ->[0-1-1]-> -wx
+2 ->[0-1-0]-> -w-
+1 ->[0-0-1]-> --x
+0 ->[0-0-0]-> ---
+
+23. command line for file or diroctory permission with number 
+-> chmod <3-digit-number> <filename>
+* example: chmod 777 <filename>
